@@ -1,13 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bitter:wght@300&family=Boogaloo&family=Dosis:wght@200&family=Libre+Franklin:wght@200&family=Lobster&family=Noto+Sans:wght@300&family=Oswald&family=Roboto:wght@100;500&family=Source+Serif+Pro:wght@300&display=swap');
 body {
   margin: 0;
+  padding-top: 80px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ background-image: linear-gradient(to right top, #e36514, #e26e17, #e1761b, #df7e1f, #de8625, #da9332, #d69e40, #d2a950, #cdb96d, #cac68b, #ccd2aa, #d4dcc7);}
+.card{
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 10px;
+   box-shadow: 0  0 20px 2px  rgba(0, 0, 0, .1);
+  transition: 1s;
+  cursor: pointer;
 }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(172, 5, 5, 0.2);
+  transform:scale(1.1);
+  z-index: 1.2;
+}
+.top{
+  position: fixed;
+  padding: 20px;
+}
+.size-sm{
+ 
+  margin: 0px;
+ margin-right: 150px;
+ margin-left: 10px;
+}
+#basic-addon1{
+max-widh: 80px;
+}
+.title{
+  font-family: 'Boogaloo', cursive;
+  font-size: x-large;
+  margin-right: 80px;
+  color: gold;
+}
+.align-top .title{
+  margin-left: 30px;
+}
+Navbar{
+  padding: 40px;
+}
+.size{
+  width: 200px;
+  height: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.case{
+  display: flex;
+  flex-direction: column;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
