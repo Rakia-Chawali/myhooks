@@ -11,12 +11,16 @@ function AddMovie({newMovie,setNewMovie,setMovies,movies,stars,search,}) {
    const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleChange = (e) => {
-  setNewMovie({ ...newMovie, [e.target.name]: e.target.value });
+  setNewMovie({ ...newMovie,
+     [e.target.name]: e.target.value,
+    id: uuidv4(),
+   });
 };
    
   
-   const handleAdd = (e)=> {
+   const handleAdd = ()=> {
  setMovies([...movies, newMovie]);
+ handleClose();
  };
 
   return (

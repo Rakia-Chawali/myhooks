@@ -83,7 +83,7 @@ function App() {
         );
       })
     );
-  }, [search, stars]);
+  }, [search, stars,movies]);
 
   return (
     <div>
