@@ -11,21 +11,12 @@ function AddMovie({newMovie,setNewMovie,setMovies,movies,stars,search,}) {
    const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleChange = (e) => {
-    if (e.target.name === "trailer") {
-      setNewMovie({
-        ...newMovie,
-        [e.target.name]: e.target.value,
-      });
-    } else {
-      setNewMovie({ ...newMovie, [e.target.name]: e.target.value });
-    }
-    console.log(e);
-  };
+  setNewMovie({ ...newMovie, [e.target.name]: e.target.value });
+};
+   
+  
    const handleAdd = (e)=> {
-  setNewMovie({
-    ...newMovie, [e.target.name]:e.target.value
-  });
- 
+ setMovies([...movies, newMovie]);
  };
 
   return (
@@ -49,20 +40,20 @@ function AddMovie({newMovie,setNewMovie,setMovies,movies,stars,search,}) {
         <Modal.Body>
           <div className="case">
             <label>Title</label>
-            <input type="text" name="Title" onChange={handleAdd} />
+            <input type="text" name="Title" onChange={handleChange} />
             <label>Description</label>
-            <input type="text" name="description" onChange={handleAdd} />
+            <input type="text" name="description" onChange={handleChange} />
             <label>URL</label>
-            <input type="text" name="img" onChange={handleAdd} />
+            <input type="text" name="img" onChange={handleChange} />
             <label>Rating</label>
-            <input type="number" name="rating" onChange={handleAdd} />
+            <input type="number" name="rating" onChange={handleChange} />
           </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="dark" onClick={handleChange}>
+          <Button variant="dark" onClick={handleAdd}>
             Save Changes
           </Button>
         </Modal.Footer>

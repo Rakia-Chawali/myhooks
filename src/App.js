@@ -72,7 +72,7 @@ function App() {
     img: "",
     description: "",
     Title: "",
-    Rating: "",
+    rating: "",
   });
   useEffect(() => {
     setFiltredMovies(
