@@ -5,7 +5,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
- background-image: linear-gradient(to right top, #e36514, #e26e17, #e1761b, #df7e1f, #de8625, #da9332, #d69e40, #d2a950, #cdb96d, #cac68b, #ccd2aa, #d4dcc7);}
+    background: rgb(226,149,14);
+background: linear-gradient(90deg,
+ rgba(226,149,14,0.9192051820728291) 0%,
+ rgba(253,96,29,1) 50%,
+ rgba(196,191,13,1) 97%
+ );
+ }
 .card{
   margin-top: 50px;
   margin-right: 30px;
@@ -26,7 +32,7 @@ body {
 .size-sm{
  
   margin: 0px;
- margin-right: 150px;
+ margin-right: 300px;
  margin-left: 10px;
 }
 #basic-addon1{
