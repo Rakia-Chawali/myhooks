@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Button } from 'react-bootstrap'
+import  Button  from "react-bootstrap/Button"
 import { Link, useParams, useNavigate} from "react-router-dom";
 
 function AddTrailer({filtredMovies}) {
@@ -28,9 +28,11 @@ console.log(selected)
         allowfullscreen
       ></iframe>
       <h3>{selected.description}</h3>
-      <Button variant="dark" onClick={handlehome}>
-        <Link to="/">GO BACK HOME</Link>
-      </Button>
+      <button type="button" class="btn btn-outline-dark"
+      onClick={handlehome}>
+      
+        <Link to="/">GO BACK </Link>
+      </button>
     </div>
   );
 };
